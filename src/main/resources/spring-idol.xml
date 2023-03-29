@@ -12,4 +12,10 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     </bean>
 
     <bean id="theStage" class="org.example.Stage" factory-method="getInstance" />
+
+    <bean id="auditorium" class="org.example.Auditorium"
+          init-method="turnOnLights"
+          destroy-method="turnOffLights"/>
+
+    <bean id="kenny" class="org.example.Instrumentalist" />
 </beans>
