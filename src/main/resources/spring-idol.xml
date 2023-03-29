@@ -17,5 +17,8 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
           init-method="turnOnLights"
           destroy-method="turnOffLights"/>
 
-    <bean id="kenny" class="org.example.Instrumentalist" />
+    <bean id="kenny"
+          class="org.example.Instrumentalist">
+        <property name="song" value="Jingle Bells" />
+    </bean>
 </beans>
